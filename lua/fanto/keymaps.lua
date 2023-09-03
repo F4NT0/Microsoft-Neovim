@@ -40,6 +40,20 @@ vim.g.maplocalleader = " "
 --------------------------------
 -- MELHOR NAVEGAÇÃO ENTRE TELAS
 --------------------------------
--- Comando para abrir uma nova tela na horizontal = :split
--- Comando para abrir uma nova tela na vertical = :vsplit
+keymap("n", "<C-h>h", ":split<CR>", opts) -- Ctrl + H + H Comando para abrir uma nova tela na horizontal = :split
+keymap("n", "<C-v>", ":vsplit<CR>", opts) -- Comando para abrir uma nova tela na vertical = :vsplit
+keymap("n", "<C-h>", "<C-w>h", opts)      -- Ctrl + H move para a tela a esquerda
+keymap("n", "<C-j>", "<C-w>j", opts)      -- Ctrl + J move para a tela abaixo  
+keymap("n", "<C-k>", "<C-w>k", opts)      -- Ctrl + K move para a tela encima
+keymap("n", "<C-l>", "<C-w>l", opts)      -- Ctrl + L move para a tela a direita
+
+----------------------
+-- RESIZE DAS TELAS
+----------------------
+keymap("n", "<C-Up>", ":resize -2<CR>", opts)             -- Resize para cima
+keymap("n", "<C-Down>", ":resize +2<CR>", opts)           -- Resize para baixo
+keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)  -- Resize para a esquerda
+keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts) -- Resize para a direita
+
+
 
