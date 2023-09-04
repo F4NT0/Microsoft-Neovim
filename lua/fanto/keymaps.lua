@@ -37,6 +37,12 @@ vim.g.maplocalleader = " "
 --    S = Shift
 --    keymap(modo,novo comando, comando antigo, operador)
 
+---------------------
+-- COMANDOS BÁSICOS
+---------------------
+keymap("n", "u", ":undo<CR>", opts) -- Desfaz o que foi alterado
+keymap("v", "<C-c>", "y", opts) -- Ctrl + C para copiar os dados selecionados
+
 --------------------------------
 -- MELHOR NAVEGAÇÃO ENTRE TELAS
 --------------------------------
@@ -55,34 +61,80 @@ keymap("n", "<C-Down>", ":resize +2<CR>", opts)           -- Resize para baixo
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)  -- Resize para a esquerda
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts) -- Resize para a direita
 
-
--- Navigate buffers
+--------------------------
+-- NAVEGAR ENTRE BUFFERS
+--------------------------
+-- Buffers são outros documentos abertos no neovim ao mesmo tempo
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
--- Insert --
--- Press jk fast to enter
-keymap("i", "jk", "<ESC>", opts)
+-- ┌--------------------------------------┐
+-- | KEYMAPS NO MODO INSERT (INSERT MODE) |
+-- └--------------------------------------┘
+-- Insert mode é o modo quando você edita um arquivo no VIM/NEOVIM
+-- Definimos que um keymap é do modo insert colocando i no primeiro atributo do keymap
+-- Glossário:
+--    C = Ctrl
+--    A = Alt
+--    S = Shift
+--    keymap(modo,novo comando, comando antigo, operador)
 
--- Visual --
--- Stay in indent mode
+-- ┌--------------------------------------┐
+-- | KEYMAPS NO MODO VISUAL (VISUAL MODE) |
+-- └--------------------------------------┘
+-- Visual mode é o modo quando você copia e cola informações em um arquivo no VIM/NEOVIM
+-- Definimos que um keymap é do modo visual colocando v no primeiro atributo do keymap
+-- No modo visual podemos utilizar o Ctrl + C e Ctrl + V para copiar e colar dados
+-- Glossário:
+--    C = Ctrl
+--    A = Alt
+--    S = Shift
+--    keymap(modo,novo comando, comando antigo, operador)
+
+--------------
+-- IDENTAÇÃO
+--------------
+-- Podemos identar dados selecionando o texto desejado e
+-- movemos com > ou < para identar os dados
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
--- Move text up and down
-keymap("v", "<A-j>", ":m .+1<CR>==", opts)
-keymap("v", "<A-k>", ":m .-2<CR>==", opts)
-keymap("v", "p", '"_dP', opts)
+------------------
+-- MOVENDO TEXTO
+-------------------
+-- Podemos mover o texto selecionado para outra parte do código
+keymap("v", "<A-j>", ":m .+1<CR>==", opts) -- Alt + J = move texto selecionado para baixo
+keymap("v", "<A-k>", ":m .-2<CR>==", opts) -- Alt + K = move texto selecionado para cima
+keymap("v", "p", "_dP", opts)
 
--- Visual Block --
--- Move text up and down
+
+-- ┌--------------------------------------------------┐
+-- | KEYMAPS NO MODO VISUAL BLOCK (VISUAL BLOCK MODE) |
+-- └--------------------------------------------------┘
+-- Visual block mode é o modo quando um arquivo no VIM/NEOVIM
+-- Definimos que um keymap é do modo visual colocando v no primeiro atributo do keymap
+-- No modo visual podemos utilizar o Ctrl + C e Ctrl + V para copiar e colar dados
+-- Glossário:
+--    C = Ctrl
+--    A = Alt
+--    S = Shift
+--    keymap(modo,novo comando, comando antigo, operador)
+
+----------------------------------------
+-- MOVENDO TEXTO PARA CIMA E PARA BAIXO
+----------------------------------------
 keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
--- Terminal --
--- Better terminal navigation
+-- ┌----------------------------┐
+-- | TERMINAL DENTRO DO NEOVIM  |
+-- └----------------------------┘
+
+---------------------------------------
+-- MELHOR NAVEGAÇÃO DENTRO DO TERMINAL
+---------------------------------------
 keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
