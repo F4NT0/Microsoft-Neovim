@@ -74,9 +74,12 @@ packer.init {
 
 return packer.startup(function(use)
 
+-- Básico
 use "wbthomason/packer.nvim"            -- Packer plugin manager oficial, faz o processo do comando :PackerUpdate
 use "nvim-lua/popup.nvim"               -- Popup API para usar no VIM/NEOVIM
 use "nvim-lua/plenary.nvim"             -- Funções lua úteis usados por muita gente
+
+-- Colorschemes
 use "projekt0n/github-nvim-theme"       -- Temas do Github no Neovim
 
 -- CMP PACOTES DE AUTOCOMPLETE
@@ -89,6 +92,11 @@ use "saadparwaiz1/cmp_luasnip"          -- Autocomplete dos snippets
 -- Snippet engine
 use "L3MON4D3/LuaSnip"                  -- Snippet engine
 use "rafamadriz/friendly-snippets"      -- Vários snippets para usar
+
+-- Language Support Protocol [LSP]
+use "hrsh7th/cmp-nvim-lsp"              -- LSP com CMP para Autocomplete
+use "neovim/nvim-lspconfig"             -- Ativa LSP no Neovim
+use "williamboman/nvim-lsp-installer"   -- Ajuda no uso do LSP
 end)
 
 
