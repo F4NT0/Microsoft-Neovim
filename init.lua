@@ -37,3 +37,8 @@ require "fanto.plugins"
 -- Localização de onde está baixado: nvim/lua/fanto/plugins.lua
 vim.cmd('colorscheme github_dark_high_contrast')
 
+-- ┌--------------┐
+-- | AUTOCOMPLETE | 
+-- └--------------┘
+-- Autocomplete mostra opções para completar o código
+require "fanto.cmp"

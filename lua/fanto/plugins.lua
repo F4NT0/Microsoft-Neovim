@@ -74,11 +74,21 @@ packer.init {
 
 return packer.startup(function(use)
 
--- COLOQUE ABAIXO SEUS PLUGINS
 use "wbthomason/packer.nvim"            -- Packer plugin manager oficial, faz o processo do comando :PackerUpdate
 use "nvim-lua/popup.nvim"               -- Popup API para usar no VIM/NEOVIM
 use "nvim-lua/plenary.nvim"             -- Funções lua úteis usados por muita gente
 use "projekt0n/github-nvim-theme"       -- Temas do Github no Neovim
+
+-- CMP PACOTES DE AUTOCOMPLETE
+use "hrsh7th/nvim-cmp"                  -- Plugin de Autocomplete
+use "hrsh7th/cmp-buffer"                -- Autocomplete dos Buffers
+use "hrsh7th/cmp-path"                  -- Autocomplete de paths
+use "hrsh7th/cmp-cmdline"               -- Autocomplete do cmdline
+use "saadparwaiz1/cmp_luasnip"          -- Autocomplete dos snippets
+
+-- Snippet engine
+use "L3MON4D3/LuaSnip"                  -- Snippet engine
+use "rafamadriz/friendly-snippets"      -- Vários snippets para usar
 end)
 
 
