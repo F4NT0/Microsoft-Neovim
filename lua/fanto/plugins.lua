@@ -75,9 +75,10 @@ packer.init {
 return packer.startup(function(use)
 
 -- COLOQUE ABAIXO SEUS PLUGINS
-use "wbthomason/packer.nvim"  -- Packer plugin manager oficial, faz o processo do comando :PackerUpdate
-use "nvim-lua/popup.nvim"     -- Popup API para usar no VIM/NEOVIM
-use "nvim-lua/plenary.nvim"   -- Funções lua úteis usados por muita gente
+use "wbthomason/packer.nvim"            -- Packer plugin manager oficial, faz o processo do comando :PackerUpdate
+use "nvim-lua/popup.nvim"               -- Popup API para usar no VIM/NEOVIM
+use "nvim-lua/plenary.nvim"             -- Funções lua úteis usados por muita gente
+use "projekt0n/github-nvim-theme"       -- Temas do Github no Neovim
 end)
 
 

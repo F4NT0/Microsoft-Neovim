@@ -29,3 +29,11 @@ require "fanto.keymaps"
 -- Localização: nvim/lua/fanto/plugins.lua
 require "fanto.plugins"
 
+-- ┌---------┐
+-- | TEMA    |
+-- └---------┘
+-- Definimos o colorscheme (tema) do nosso Neovim
+-- o tema foi baixado no nosso gerenciador de plugins packer
+-- Localização de onde está baixado: nvim/lua/fanto/plugins.lua
+vim.cmd('colorscheme github_dark_high_contrast')
+

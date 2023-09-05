@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["github-nvim-theme"] = {
+    loaded = true,
+    path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\github-nvim-theme",
+    url = "https://github.com/projekt0n/github-nvim-theme"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
