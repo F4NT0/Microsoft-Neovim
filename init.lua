@@ -42,3 +42,16 @@ vim.cmd('colorscheme github_dark_high_contrast')
 -- └--------------┘
 -- Autocomplete mostra opções para completar o código
 require "fanto.cmp"
+
+-- ┌------------------------┐
+-- | MASON (LSP e Debug)    | 
+-- └------------------------┘
+-- MASON possui seu prório diretório em nvim/lua/fanto/mason-config/
+-- Aqui o require vai pegar o init.lua dentro do diretório mason-config/
+-- Comandos:
+-- :Mason = abre a tela do mason
+-- Dentro da tela do mason:
+--   Tecla I = instala o plugin com o mouse encima
+--   Tecla U = atualiza o plugin com o mouse encima
+require "fanto.mason-config"
+

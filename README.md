@@ -315,17 +315,17 @@ Como mostra no arquivo, temos várias configurações básicar do Neovim
 Organizamos como mostra acima da seguinte forma:
 
 ```lua
---   ╔═══════════════════════════════╗
---   ║  TÍTULO PRINCIPAL DO ARQUIVO  ║
---   ╚═══════════════════════════════╝
+-- ╔═══════════════════════════════╗
+-- ║  TÍTULO PRINCIPAL DO ARQUIVO  ║
+-- ╚═══════════════════════════════╝
 
 -- ┌----------------------------┐
 -- | SUBTÍTULO DE CATEGORIA     |
 -- └----------------------------┘
 
----------------------------------------
--- SUBTÍTULO DE CATEGORIA INTERNA
----------------------------------------
+------------------------------------
+-- SUBTÍTULO DE CATEGORIA INTERNA --
+------------------------------------
 ```
 
 Dessa forma, temos o título do arquivo, uma categoria grande e as categorias internas, facilitando a documentação.

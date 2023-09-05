@@ -93,10 +93,32 @@ use "saadparwaiz1/cmp_luasnip"          -- Autocomplete dos snippets
 use "L3MON4D3/LuaSnip"                  -- Snippet engine
 use "rafamadriz/friendly-snippets"      -- Vários snippets para usar
 
+--------------------
+-- MASON PLUGINS --
+--------------------
+
+-- Mason (configurar linguagens de programação e debug)
+use "williamboman/mason.nvim"           -- Plugin oficial do mason
+
 -- Language Support Protocol [LSP]
-use "hrsh7th/cmp-nvim-lsp"              -- LSP com CMP para Autocomplete
-use "neovim/nvim-lspconfig"             -- Ativa LSP no Neovim
-use "williamboman/nvim-lsp-installer"   -- Ajuda no uso do LSP
+use "williamboman/mason-lspconfig.nvim" -- Plugin de config do lsp do mason
+use "neovim/nvim-lspconfig"             -- Plugin oficial do lsp do Neovim
+
+-- Debug Adapter Protocol [DAP]
+use "mfussenegger/nvim-dap"             -- Debugger para Neovim
+use { "rcarriga/nvim-dap-ui",           -- Interface Gráfica do DAP do Neovim
+      requires = {
+	      "mfussenegger/nvim-dap"
+      } 
+}
+
+-- Linters (mostrar código colorido)
+use "mfussenegger/nvim-lint"            -- Neovim linter funcional
+
+-- Formatters (formatar código quando salvo)
+use "mhartington/formatter.nvim"        -- Melhor formater até o momento
+
+
 end)
 
 

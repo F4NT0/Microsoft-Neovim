@@ -89,11 +89,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-cmdline",
     url = "https://github.com/hrsh7th/cmp-cmdline"
   },
-  ["cmp-nvim-lsp"] = {
-    loaded = true,
-    path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
-    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
-  },
   ["cmp-path"] = {
     loaded = true,
     path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
@@ -103,6 +98,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
+  ["formatter.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\formatter.nvim",
+    url = "https://github.com/mhartington/formatter.nvim"
   },
   ["friendly-snippets"] = {
     loaded = true,
@@ -114,15 +114,35 @@ _G.packer_plugins = {
     path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\github-nvim-theme",
     url = "https://github.com/projekt0n/github-nvim-theme"
   },
+  ["mason-lspconfig.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason-lspconfig.nvim",
+    url = "https://github.com/williamboman/mason-lspconfig.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
-  ["nvim-lsp-installer"] = {
+  ["nvim-dap"] = {
     loaded = true,
-    path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lsp-installer",
-    url = "https://github.com/williamboman/nvim-lsp-installer"
+    path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-ui"] = {
+    loaded = true,
+    path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
+  },
+  ["nvim-lint"] = {
+    loaded = true,
+    path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lint",
+    url = "https://github.com/mfussenegger/nvim-lint"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
