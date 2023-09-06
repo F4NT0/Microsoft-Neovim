@@ -17,6 +17,7 @@ local options = {
 	smartcase = true,              -- Smart case serve para ignorar verificações
 	smartindent = true,            -- Identação de código mais esperta
 	swapfile = false,              -- Quando abre um arquivo ele cria um arquivo swap desnecessário
+	termguicolors = true,           -- Ativa melhores cores no terminal
 	number = true,                 -- Mostra o número da linha
 	cursorline = false,            -- Mostra a linha atual
 	relativenumber = false,        -- Altera o número da linha para a que está atualmente

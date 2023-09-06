@@ -74,10 +74,51 @@ packer.init {
 
 return packer.startup(function(use)
 
--- COLOQUE ABAIXO SEUS PLUGINS
-use "wbthomason/packer.nvim"  -- Packer plugin manager oficial, faz o processo do comando :PackerUpdate
-use "nvim-lua/popup.nvim"     -- Popup API para usar no VIM/NEOVIM
-use "nvim-lua/plenary.nvim"   -- Funções lua úteis usados por muita gente
+-- Básico
+use "wbthomason/packer.nvim"            -- Packer plugin manager oficial, faz o processo do comando :PackerUpdate
+use "nvim-lua/popup.nvim"               -- Popup API para usar no VIM/NEOVIM
+use "nvim-lua/plenary.nvim"             -- Funções lua úteis usados por muita gente
+
+-- Colorschemes
+use "projekt0n/github-nvim-theme"       -- Temas do Github no Neovim
+
+-- CMP PACOTES DE AUTOCOMPLETE
+use "hrsh7th/nvim-cmp"                  -- Plugin de Autocomplete
+use "hrsh7th/cmp-buffer"                -- Autocomplete dos Buffers
+use "hrsh7th/cmp-path"                  -- Autocomplete de paths
+use "hrsh7th/cmp-cmdline"               -- Autocomplete do cmdline
+use "saadparwaiz1/cmp_luasnip"          -- Autocomplete dos snippets
+
+-- Snippet engine
+use "L3MON4D3/LuaSnip"                  -- Snippet engine
+use "rafamadriz/friendly-snippets"      -- Vários snippets para usar
+
+--------------------
+-- MASON PLUGINS --
+--------------------
+
+-- Mason (configurar linguagens de programação e debug)
+use "williamboman/mason.nvim"           -- Plugin oficial do mason
+
+-- Language Support Protocol [LSP]
+use "williamboman/mason-lspconfig.nvim" -- Plugin de config do lsp do mason
+use "neovim/nvim-lspconfig"             -- Plugin oficial do lsp do Neovim
+
+-- Debug Adapter Protocol [DAP]
+use "mfussenegger/nvim-dap"             -- Debugger para Neovim
+use { "rcarriga/nvim-dap-ui",           -- Interface Gráfica do DAP do Neovim
+      requires = {
+	      "mfussenegger/nvim-dap"
+      } 
+}
+
+-- Linters (mostrar código colorido)
+use "mfussenegger/nvim-lint"            -- Neovim linter funcional
+
+-- Formatters (formatar código quando salvo)
+use "mhartington/formatter.nvim"        -- Melhor formater até o momento
+
+
 end)
 
 

@@ -29,3 +29,29 @@ require "fanto.keymaps"
 -- Localização: nvim/lua/fanto/plugins.lua
 require "fanto.plugins"
 
+-- ┌---------┐
+-- | TEMA    |
+-- └---------┘
+-- Definimos o colorscheme (tema) do nosso Neovim
+-- o tema foi baixado no nosso gerenciador de plugins packer
+-- Localização de onde está baixado: nvim/lua/fanto/plugins.lua
+vim.cmd('colorscheme github_dark_high_contrast')
+
+-- ┌--------------┐
+-- | AUTOCOMPLETE | 
+-- └--------------┘
+-- Autocomplete mostra opções para completar o código
+require "fanto.cmp"
+
+-- ┌------------------------┐
+-- | MASON (LSP e Debug)    | 
+-- └------------------------┘
+-- MASON possui seu prório diretório em nvim/lua/fanto/mason-config/
+-- Aqui o require vai pegar o init.lua dentro do diretório mason-config/
+-- Comandos:
+-- :Mason = abre a tela do mason
+-- Dentro da tela do mason:
+--   Tecla I = instala o plugin com o mouse encima
+--   Tecla U = atualiza o plugin com o mouse encima
+require "fanto.mason-config"
+
