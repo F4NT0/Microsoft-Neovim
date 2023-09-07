@@ -58,4 +58,18 @@ require "fanto.plugins-config.mason"
 -- ┌-------------┐
 -- | NERDTREE    | 
 -- └-------------┘
+-- Nerdtree é uma melhor barra de diretórios para Neovim
+-- Comando para iniciar = :NvimTreeOpen
 require "fanto.plugins-config.nerdtree"
+
+-- ┌------------┐
+-- | LUALINE    | 
+-- └------------┘
+-- Barra de infos no bottom melhorado com informações úteis
+require "fanto.plugins-config.lualine"
+
+-- ┌--------------┐
+-- | TELESCOPE    | 
+-- └--------------┘
+
+

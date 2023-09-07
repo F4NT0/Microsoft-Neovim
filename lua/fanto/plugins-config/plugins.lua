@@ -124,10 +124,32 @@ use "mhartington/formatter.nvim"        -- Melhor formater até o momento
 -----------------------
 use "nvim-tree/nvim-tree.lua"           -- Plugin oficial do Nerdtree
 use "nvim-tree/nvim-web-devicons"       -- Plugin de icones para o Nerdtree
+
 -----------------------
 -- LUALINE PLUGINS  --
 -----------------------
 use "nvim-lualine/lualine.nvim"         -- Plugin do lualine
+
+----------------
+-- TREESITTER --
+----------------
+use {
+  'nvim-treesitter/nvim-treesitter',
+  run = function()
+  local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+  ts_update()
+  end,
+}
+
+----------------
+-- TELESCOPE --
+----------------
+
+use "nvim-lua/plenary.nvim"
+-- Não esqueça de baixar o ripgrep: scoop install ripgrep
+use {
+  'nvim-telescope/telescope.nvim', tag = '0.1.2'
+}
 
 
 end)
