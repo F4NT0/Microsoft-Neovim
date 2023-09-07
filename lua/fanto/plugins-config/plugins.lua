@@ -109,7 +109,7 @@ use "mfussenegger/nvim-dap"             -- Debugger para Neovim
 use { "rcarriga/nvim-dap-ui",           -- Interface Gráfica do DAP do Neovim
       requires = {
 	      "mfussenegger/nvim-dap"
-      } 
+      }
 }
 
 -- Linters (mostrar código colorido)
@@ -117,6 +117,17 @@ use "mfussenegger/nvim-lint"            -- Neovim linter funcional
 
 -- Formatters (formatar código quando salvo)
 use "mhartington/formatter.nvim"        -- Melhor formater até o momento
+
+
+-----------------------
+-- NERDTREE PLUGINS --
+-----------------------
+use "nvim-tree/nvim-tree.lua"           -- Plugin oficial do Nerdtree
+use "nvim-tree/nvim-web-devicons"       -- Plugin de icones para o Nerdtree
+-----------------------
+-- LUALINE PLUGINS  --
+-----------------------
+use "nvim-lualine/lualine.nvim"         -- Plugin do lualine
 
 
 end)

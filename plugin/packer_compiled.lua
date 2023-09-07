@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\github-nvim-theme",
     url = "https://github.com/projekt0n/github-nvim-theme"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason-lspconfig.nvim",
@@ -148,6 +153,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,

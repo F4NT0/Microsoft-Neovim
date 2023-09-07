@@ -26,8 +26,8 @@ require "fanto.keymaps"
 -- | PLUGINS |
 -- └---------┘
 -- Plugins é o arquivo onde ficam configurado todos os plugins adicionados ao nosso Neovim
--- Localização: nvim/lua/fanto/plugins.lua
-require "fanto.plugins"
+-- Localização: nvim/lua/fanto/plugins/init.lua
+require "fanto.plugins-config.plugins"
 
 -- ┌---------┐
 -- | TEMA    |
@@ -53,5 +53,9 @@ require "fanto.cmp"
 -- Dentro da tela do mason:
 --   Tecla I = instala o plugin com o mouse encima
 --   Tecla U = atualiza o plugin com o mouse encima
-require "fanto.mason-config"
+require "fanto.plugins-config.mason"
 
+-- ┌-------------┐
+-- | NERDTREE    | 
+-- └-------------┘
+require "fanto.plugins-config.nerdtree"
