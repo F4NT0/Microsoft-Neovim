@@ -144,13 +144,12 @@ use {
 ----------------
 -- TELESCOPE --
 ----------------
-
-use "nvim-lua/plenary.nvim"
 -- Não esqueça de baixar o ripgrep: scoop install ripgrep
-use {
-  'nvim-telescope/telescope.nvim', tag = '0.1.2'
-}
 
+use {
+  "nvim-telescope/telescope.nvim", tag = '0.1.2'  -- Plugin Oficial do telescope
+}
+use "nvim-telescope/telescope-file-browser.nvim"  -- Melhoria de busca de arquivos
 
 end)
 
