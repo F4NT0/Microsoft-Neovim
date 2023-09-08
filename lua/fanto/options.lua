@@ -17,11 +17,11 @@ local options = {
 	smartcase = true,              -- Smart case serve para ignorar verificações
 	smartindent = true,            -- Identação de código mais esperta
 	swapfile = false,              -- Quando abre um arquivo ele cria um arquivo swap desnecessário
-	termguicolors = true,           -- Ativa melhores cores no terminal
+	termguicolors = true,          -- Ativa melhores cores no terminal
 	number = true,                 -- Mostra o número da linha
 	cursorline = false,            -- Mostra a linha atual
 	relativenumber = false,        -- Altera o número da linha para a que está atualmente
-	numberwidth = 4,               -- Define que a coluna tem uma largura (padrão 4)
+	numberwidth = 2,               -- Define que a coluna tem uma largura (padrão 4)
 	splitbelow = true,             -- Deixa separar a tela em outro arquivo abaixo
 	splitright = true,             -- Deixa separar a tela em uma nova tela a direita
 	conceallevel = 0,              -- Deixa mostrar `` visivel no markdown
@@ -31,6 +31,7 @@ local options = {
 	signcolumn = "yes",            -- Mostra o sinal da coluna
 	scrolloff = 8,                 -- Scroll do Neovim
 	sidescrolloff = 8,             -- Scroll do Neovim 2
+	showmode = false               -- Remove status do neovim
 }
 
 -- Adicionando vim.opt para todas as opções

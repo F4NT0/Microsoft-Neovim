@@ -87,6 +87,7 @@ use "hrsh7th/nvim-cmp"                  -- Plugin de Autocomplete
 use "hrsh7th/cmp-buffer"                -- Autocomplete dos Buffers
 use "hrsh7th/cmp-path"                  -- Autocomplete de paths
 use "hrsh7th/cmp-cmdline"               -- Autocomplete do cmdline
+use "hrsh7th/cmp-nvim-lsp"              -- Conexão do LSP com o CMP
 use "saadparwaiz1/cmp_luasnip"          -- Autocomplete dos snippets
 
 -- Snippet engine
@@ -109,7 +110,7 @@ use "mfussenegger/nvim-dap"             -- Debugger para Neovim
 use { "rcarriga/nvim-dap-ui",           -- Interface Gráfica do DAP do Neovim
       requires = {
 	      "mfussenegger/nvim-dap"
-      } 
+      }
 }
 
 -- Linters (mostrar código colorido)
@@ -118,6 +119,52 @@ use "mfussenegger/nvim-lint"            -- Neovim linter funcional
 -- Formatters (formatar código quando salvo)
 use "mhartington/formatter.nvim"        -- Melhor formater até o momento
 
+
+-----------------------
+-- NERDTREE PLUGINS --
+-----------------------
+use "nvim-tree/nvim-tree.lua"           -- Plugin oficial do Nerdtree
+use "nvim-tree/nvim-web-devicons"       -- Plugin de icones para o Nerdtree
+
+-----------------------
+-- LUALINE PLUGINS  --
+-----------------------
+use "nvim-lualine/lualine.nvim"         -- Plugin do lualine
+
+----------------
+-- TREESITTER --
+----------------
+use {
+  'nvim-treesitter/nvim-treesitter',
+  run = function()
+  local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+  ts_update()
+  end,
+}
+
+----------------
+-- TELESCOPE --
+----------------
+-- Não esqueça de baixar o ripgrep: scoop install ripgrep
+
+use {
+  "nvim-telescope/telescope.nvim", tag = '0.1.2'  -- Plugin Oficial do telescope
+}
+use "nvim-telescope/telescope-file-browser.nvim"  -- Melhoria de busca de arquivos
+
+----------------
+-- DASHBOARD --
+----------------
+-- Dashboard inicial quando abrimos o Neovim
+use {
+  'glepnir/dashboard-nvim',
+   requires = {'nvim-tree/nvim-web-devicons'}
+}
+
+----------------
+-- IDENTLINE --
+----------------
+use "lukas-reineke/indent-blankline.nvim"  -- Plugin para mostrar a identação das chaves
 
 end)
 

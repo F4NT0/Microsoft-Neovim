@@ -26,8 +26,8 @@ require "fanto.keymaps"
 -- | PLUGINS |
 -- └---------┘
 -- Plugins é o arquivo onde ficam configurado todos os plugins adicionados ao nosso Neovim
--- Localização: nvim/lua/fanto/plugins.lua
-require "fanto.plugins"
+-- Localização: nvim/lua/fanto/plugins/init.lua
+require "fanto.plugins-config.plugins"
 
 -- ┌---------┐
 -- | TEMA    |
@@ -53,5 +53,34 @@ require "fanto.cmp"
 -- Dentro da tela do mason:
 --   Tecla I = instala o plugin com o mouse encima
 --   Tecla U = atualiza o plugin com o mouse encima
-require "fanto.mason-config"
+require "fanto.plugins-config.mason"
+
+-- ┌-------------┐
+-- | NVIMTREE    | 
+-- └-------------┘
+-- Nerdtree é uma melhor barra de diretórios para Neovim
+-- Comando para iniciar = :NvimTreeOpen
+require "fanto.plugins-config.nvimtree"
+
+-- ┌------------┐
+-- | LUALINE    | 
+-- └------------┘
+-- Barra de infos no bottom melhorado com informações úteis
+require "fanto.plugins-config.lualine"
+
+-- ┌--------------┐
+-- | TELESCOPE    | 
+-- └--------------┘
+require "fanto.plugins-config.telescope"
+
+-- ┌-------------------┐
+-- | DASHBOARD-NVIM    | 
+-- └-------------------┘
+require "fanto.plugins-config.dashboard"
+
+-- ┌--------------------┐
+-- | INDENT-BLANKLINE   | 
+-- └--------------------┘
+require "fanto.plugins-config.indentlines"
+
 
