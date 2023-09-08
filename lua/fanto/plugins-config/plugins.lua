@@ -87,6 +87,7 @@ use "hrsh7th/nvim-cmp"                  -- Plugin de Autocomplete
 use "hrsh7th/cmp-buffer"                -- Autocomplete dos Buffers
 use "hrsh7th/cmp-path"                  -- Autocomplete de paths
 use "hrsh7th/cmp-cmdline"               -- Autocomplete do cmdline
+use "hrsh7th/cmp-nvim-lsp"              -- Conexão do LSP com o CMP
 use "saadparwaiz1/cmp_luasnip"          -- Autocomplete dos snippets
 
 -- Snippet engine
@@ -150,6 +151,20 @@ use {
   "nvim-telescope/telescope.nvim", tag = '0.1.2'  -- Plugin Oficial do telescope
 }
 use "nvim-telescope/telescope-file-browser.nvim"  -- Melhoria de busca de arquivos
+
+----------------
+-- DASHBOARD --
+----------------
+-- Dashboard inicial quando abrimos o Neovim
+use {
+  'glepnir/dashboard-nvim',
+   requires = {'nvim-tree/nvim-web-devicons'}
+}
+
+----------------
+-- IDENTLINE --
+----------------
+use "lukas-reineke/indent-blankline.nvim"  -- Plugin para mostrar a identação das chaves
 
 end)
 

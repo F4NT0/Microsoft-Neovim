@@ -1,6 +1,6 @@
--- ┌----------------------------┐
--- | TREESITTER CONFIGURATION   |
--- └----------------------------┘
+-- ╔════════════════════════════╗
+-- ║  TREESITTER CONFIGURATION  ║
+-- ╚════════════════════════════╝
 
 -- Para instalar uma linguagem
 -- :TSInstall nome-linguagem = instala uma linguagem
@@ -23,5 +23,4 @@ require("nvim.treesitter.configs").setup({
 	highlight = {
 	   enable = true
 	}
-
 })

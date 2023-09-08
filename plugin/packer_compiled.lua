@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-cmdline",
     url = "https://github.com/hrsh7th/cmp-cmdline"
   },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
   ["cmp-path"] = {
     loaded = true,
     path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
@@ -98,6 +103,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dashboard-nvim",
+    url = "https://github.com/glepnir/dashboard-nvim"
   },
   ["formatter.nvim"] = {
     loaded = true,
@@ -113,6 +123,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\github-nvim-theme",
     url = "https://github.com/projekt0n/github-nvim-theme"
+  },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Gabriel_Stundner\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,

@@ -56,11 +56,11 @@ require "fanto.cmp"
 require "fanto.plugins-config.mason"
 
 -- ┌-------------┐
--- | NERDTREE    | 
+-- | NVIMTREE    | 
 -- └-------------┘
 -- Nerdtree é uma melhor barra de diretórios para Neovim
 -- Comando para iniciar = :NvimTreeOpen
-require "fanto.plugins-config.nerdtree"
+require "fanto.plugins-config.nvimtree"
 
 -- ┌------------┐
 -- | LUALINE    | 
@@ -71,5 +71,16 @@ require "fanto.plugins-config.lualine"
 -- ┌--------------┐
 -- | TELESCOPE    | 
 -- └--------------┘
+require "fanto.plugins-config.telescope"
+
+-- ┌-------------------┐
+-- | DASHBOARD-NVIM    | 
+-- └-------------------┘
+require "fanto.plugins-config.dashboard"
+
+-- ┌--------------------┐
+-- | INDENT-BLANKLINE   | 
+-- └--------------------┘
+require "fanto.plugins-config.indentlines"
 
 
