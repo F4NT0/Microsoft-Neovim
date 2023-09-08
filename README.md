@@ -30,52 +30,7 @@ Podemos instalar NEOVIM com o seguinte comando:
 choco install neovim
 ```
 
-Vai falhar a instalação de um pacote, mas se tiver permissão de admin melhor
-
-## 3 - Configuração do Neovim
-
-Clique em <kbd>Win</kbd> + <kbd>R</kbd> e escreva `%appdata%` ou vá direto em `AppData\Local`
-
-Crie um novo diretório chamado `nvim`
-
-Dentro desse diretório iremos construir os arquivos de configuração que queremos
-
-## 4 - Configuração com vimscript
-
-É uma configuração mais simples usando vimscript
-
-Arquivo principal: **init.vim**
-
-TBD
-
-## 5 - Configuração com a linguagem lua
-
-É uma configuração mais avançada com várias configurações usando a linguagem de programação lua
-
-Arquivo principal: **init.lua**
-
-Deve ser criado um diretório chamado `nvim` em `C:\Users\nome\Appdata\Local\`.
-
-A estrutura completa de arquivos deve ser assim:
-
-```text
-nvim
- |- init.lua
- |- lua/
-     |- fanto/
-         |- plugins/
-         |- cmp.lua
-         |- keymaps.lua
-         |- options.lua
-         |- plugins.lua
- 
-```
-
-### Keymaps
-
-Criamos um arquivo em `nvim/lua/fanto/` chamado `keymaps.lua`.
-
-### Organizando os dados
+## 3 - Organizando os dados
 
 Em todos os arquivos lua temos os seguintes títulos.
 
@@ -92,3 +47,23 @@ Em todos os arquivos lua temos os seguintes títulos.
 -- SUBTÍTULO DE CATEGORIA INTERNA --
 ------------------------------------
 ```
+
+## 4 - Plugins instalados
+
+### dashboard-nvim
+
+- Localização do arquivo: `lua/fanto/plugins-config/dashboard.lua`
+
+É um plugin para o Neovim (ou Vim) que cria uma página inicial personalizável e informativa quando você inicia o Neovim. 
+
+Ele oferece uma visão geral rápida de informações úteis, como listas de arquivos recentes, projetos favoritos, comandos personalizados e muito mais. 
+
+O dashboard-nvim é projetado para melhorar a produtividade do usuário, permitindo que você acesse facilmente seus projetos e arquivos frequentemente usados, além de fornecer uma experiência de inicialização mais agradável.
+
+Para abrir o plugin, só escrever no terminal `nvim`
+
+### indent-blankline
+
+- Localização do arquivo: `lua/fanto/plugins-config/indentlines.lua`
+
+É um arquivo simples que indenta as chaves de uma função e mostra uma linha conectando o inicio e o fim de uma função
