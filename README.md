@@ -58,6 +58,10 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocola
 
 Coloque o seguinte script em um arquivo chamado `ChocolateyInstallNonAdmin.ps1`
 
+
+---
+
+
 ### 2 - Instalar o Neovim
 
 Podemos instalar NEOVIM com o seguinte comando:
@@ -65,6 +69,8 @@ Podemos instalar NEOVIM com o seguinte comando:
 ```powershell
 choco install neovim
 ```
+
+---
 
 ### 3 - Plugins instalados
 
@@ -85,6 +91,9 @@ Para abrir o plugin, só escrever no terminal `nvim`
     <img src="images/dashboard.png">
 </p>
 
+
+---
+
 #### indent-blankline
 
 - Localização do arquivo: `lua/fanto/plugins-config/indentlines.lua`
@@ -95,6 +104,8 @@ Para abrir o plugin, só escrever no terminal `nvim`
 <p align="center">
     <img src="images/indent-blankline.png">
 </p>
+
+---
 
 #### Mason
 
@@ -113,4 +124,47 @@ Mason é um package manager para auxiliar a instalação de autocompletes para a
 <p align="center">
     <img src="images/mason.png">
 </p>
+
+---
+
+#### Packer
+
+- Localização do arquivo: `lua/fanto/plugins-config/plugins.lua`
+- Repositório oficial: [https://github.com/wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim)
+
+Packer serve para instalar plugins no Neovim
+
+<p align="center">
+    <img src="images/packer.png">
+</p>
+
+
+----
+
+#### Lualine
+
+- Localização do arquivo: `lua/fanto/plugins-config/lualine.lua`
+- Repositório oficial: [https://github.com/nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+
+Lualine é uma melhoria de infos mostrados abaixo do Neovim.
+
+Eu uso o tema `iceberg-dark`
+
+<p align="center">
+    <img src="images/lualine.png">
+</p>
+
+----
+
+#### Nvim-tree
+
+- Localização do arquivo: `lua/fanto/plugins-config/nvimtree.lua`
+- Repositório oficial: [https://github.com/nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
+
+Nvim-tree é um plugin para mostrar os diretórios e arquivos do lado direito do neovim
+
+<p align="center">
+    <img src="images/nvimtree.png">
+</p>
+
 
